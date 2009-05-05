@@ -43,7 +43,7 @@ h2. CSS
 .slides { position:absolute; top:0; left:0; }
 .slides div { position:absolute; top:0; width:500px; display:none; }
 </pre>
-	
+
 h2. Initialize
 
 <pre>
@@ -53,7 +53,7 @@ h2. Initialize
         });
 </script>
 </pre>
-	
+
 h2. Changelog
 
 0.5 - Initial release.
