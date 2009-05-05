@@ -38,17 +38,22 @@ h2. Markup
 
 h2. CSS
 
-@.container { width:500px; height:375px; overflow:hidden; position:relative; cursor:pointer; }@
-@.slides { position:absolute; top:0; left:0; }@
-@.slides div { position:absolute; top:0; width:500px; display:none; }@
-
+<pre>
+.container { width:500px; height:375px; overflow:hidden; position:relative; cursor:pointer; }
+.slides { position:absolute; top:0; left:0; }
+.slides div { position:absolute; top:0; width:500px; display:none; }
+</pre>
+	
 h2. Initialize
-@<script type="text/javascript" charset="utf-8">@
-        @$(function(){@
-                @$('#loopedSlider').loopedSlider();@
-        @});@
-@</script>@
 
+<pre>
+<script type="text/javascript" charset="utf-8">
+        $(function(){
+                $('#loopedSlider').loopedSlider();
+        });
+</script>
+</pre>
+	
 h2. Changelog
 
 0.5 - Initial release.
