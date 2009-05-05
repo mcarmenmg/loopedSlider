@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>nathansearles/loopedSlider @ GitHub</title>
+	
+	<style type="text/css">
+		body {
+  		margin-top: 1.0em;
+  		background-color: #adfea3;
+		  font-family: "helvetica"; 
+  		color: #000000;
+    }
+    #container {
+      margin: 0 auto;
+      width: 700px;
+    }
+		h1 { font-size: 3.8em; color: #52015c; margin-bottom: 3px; }
+		h1 .small { font-size: 0.4em; }
+		h1 a { text-decoration: none }
+		h2 { font-size: 1.5em; color: #52015c; }
+    h3 { text-align: center; color: #52015c; }
+    a { color: #52015c; }
+    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .download { float: right; }
+		pre { background: #000; color: #fff; padding: 15px;}
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    .footer { text-align:center; padding-top:30px; font-style: italic; }
+	</style>
+	
+</head>
+
+<body>
+  <a href="http://github.com/nathansearles/loopedSlider"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+  
+  <div id="container">
+
+    <div class="download">
+      <a href="http://github.com/nathansearles/loopedSlider/zipball/master">
+        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+      <a href="http://github.com/nathansearles/loopedSlider/tarball/master">
+        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+    </div>
+      
+    <h1><a href="http://github.com/nathansearles/loopedSlider">loopedSlider</a> 
+      <span class="small">by <a href="http://github.com/nathansearles">nathansearles</a></span></h1>
+
+    <div class="description">
+      loopedSlider is a plugin made for jQuery that solves a simple problem, the looping of slide content. It was created to be easy to implement, smooth and most of all end the "content rewind" that most other content sliders suffer from.
+    </div>
+
+    <p>Examples
+<a href="http://nathansearles.com/loopedslider/example-1.html">Simple example using images and DIVs</a>
+<a href="http://nathansearles.com/loopedslider/example-2.html">Simple text and auto height example using LIs</a>
+<a href="http://nathansearles.com/loopedslider/example-3.html">Multiple sliders and auto play example</a>
+<a href="http://nathansearles.com/loopedslider/example-4.html">Fancy styled example</a>
+
+Markup example for $("#loopedSlider").loopedSlider();
+<div id="loopedSlider"> 
+        <div class="container">
+                <div class="slides">
+                        <div><img src="01.jpg" alt="" /></div>
+                        <div><img src="02.jpg" alt="" /></div>
+                        <div><img src="03.jpg" alt="" /></div>
+                        <div><img src="04.jpg" alt="" /></div>
+                </div>
+        </div>
+        <a href="#" class="previous">previous</a>
+        <a href="#" class="next">next</a>
+        <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+        </ul>   
+</div>
+
+Required CSS
+                .container { width:500px; height:375px; overflow:hidden; position:relative; cursor:pointer; }
+                .slides { position:absolute; top:0; left:0; }
+                .slides div { position:absolute; top:0; width:500px; display:none; }
+
+Initialize
+<script type="text/javascript" charset="utf-8">
+        $(function(){
+                $('#loopedSlider').loopedSlider();
+        });
+</script></p><h2>Authors</h2>
+<p>nathansearles (nsearles@gmail.com)<br/><br/>      </p>
+<h2>Contact</h2>
+<p> (nsearles@gmail.com)<br/>      </p>
+
+
+    <h2>Download</h2>
+    <p>
+      You can download this project in either
+      <a href="http://github.com/nathansearles/loopedSlider/zipball/master">zip</a> or
+      <a href="http://github.com/nathansearles/loopedSlider/tarball/master">tar</a> formats.
+    </p>
+    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
+      by running:
+      <pre>$ git clone git://github.com/nathansearles/loopedSlider</pre>
+    </p>
+      
+    <div class="footer">
+      get the source code on GitHub : <a href="http://github.com/nathansearles/loopedSlider">nathansearles/loopedSlider</a>
+    </div>
+    
+  </div>
+
+  
+</body>
+</html>
