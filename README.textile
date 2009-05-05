@@ -8,33 +8,33 @@ Developed by Nathan Searles, "http://nathansearles.com":http://nathansearles.com
 
 h2. Examples
 
-"Google":http://google.com
-
-"Simple example using images and DIVs":http://nathansearles.com/loopedslider/example-1.html
-"Simple text and auto height example using LIs":http://nathansearles.com/loopedslider/example-2.html
-"Multiple sliders and auto play example":http://nathansearles.com/loopedslider/example-2.html
-"Fancy styled example":http://nathansearles.com/loopedslider/example-4.html
+* "Simple example using images and DIVs":http://nathansearles.com/loopedslider/example-1.html
+* "Simple text and auto height example using LIs":http://nathansearles.com/loopedslider/example-2.html
+* "Multiple sliders and auto play example":http://nathansearles.com/loopedslider/example-2.html
+* "Fancy styled example":http://nathansearles.com/loopedslider/example-4.html
 
 h2. Markup
 
-@<div id="loopedSlider">@
-@        <div class="container">@
-@                <div class="slides">@
-@                        <div><img src="01.jpg" alt="" /></div>@
-@                        <div><img src="02.jpg" alt="" /></div>@
-@                        <div><img src="03.jpg" alt="" /></div>@
-@                        <div><img src="04.jpg" alt="" /></div>@
-@                </div>@
-@        </div>@
-@        <a href="#" class="previous">previous</a>@
-@        <a href="#" class="next">next</a>@
-@        <ul class="pagination">@
-@                <li><a href="#">1</a></li>@
-@                <li><a href="#">2</a></li>@
-@                <li><a href="#">3</a></li>@
-@                <li><a href="#">4</a></li>@
-@        </ul>@  
-@</div>@
+<pre>
+<div id="loopedSlider">
+        <div class="container">
+                <div class="slides">
+                        <div><img src="01.jpg" alt="" /></div>
+                        <div><img src="02.jpg" alt="" /></div>
+                        <div><img src="03.jpg" alt="" /></div>
+                        <div><img src="04.jpg" alt="" /></div>
+                </div>
+        </div>
+        <a href="#" class="previous">previous</a>
+        <a href="#" class="next">next</a>
+        <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+        </ul>  
+</div>
+</pre>
 
 h2. CSS
 
@@ -43,7 +43,6 @@ h2. CSS
 @.slides div { position:absolute; top:0; width:500px; display:none; }@
 
 h2. Initialize
-
 @<script type="text/javascript" charset="utf-8">@
         @$(function(){@
                 @$('#loopedSlider').loopedSlider();@
