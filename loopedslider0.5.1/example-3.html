@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>loopedSlider jQuery Plugin</title>
+	
+	<script src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="loopedslider.js" type="text/javascript" charset="utf-8"></script>
+	
+	<style type="text/css" media="screen">	
+		/*
+		 * Required 
+		*/
+		.container { width:500px; height:375px; overflow:hidden; position:relative; cursor:pointer; }
+		div.slides { position:absolute; top:0; left:0; }
+		ul.slides { position:absolute; top:0; left:0; list-style:none; padding:0; margin:0; }
+		div.slides div,ul.slides li { position:absolute; top:0; width:500px; display:none; padding:0; margin:0; }
+		/*
+		 * Optional
+		*/
+		#loopedSlider,#newsSlider { margin:0 auto; width:500px; position:relative; clear:both; }
+		ul.pagination { list-style:none; padding:0; margin:0; }
+		ul.pagination li  { float:left; }
+		ul.pagination li a { padding:2px 4px; }
+		ul.pagination li.active a { background:blue; color:white; }
+	</style>
+</head>
+
+<body>
+<div id="loopedSlider">	
+	<div class="container">
+		<div class="slides">
+			<div><img src="image-01.jpg" width="500" height="375" alt="First Image" /></div>
+			<div><img src="image-02.jpg" width="500" height="375" alt="Second Image" /></div>
+			<div><img src="image-03.jpg" width="500" height="375" alt="Third Image" /></div>
+			<div><img src="image-04.jpg" width="500" height="375" alt="Fourth Image" /></div>
+		</div>
+	</div>
+	<a href="#" class="previous">previous</a>
+	<a href="#" class="next">next</a>
+	<ul class="pagination">
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+	</ul>	
+</div>
+<div id="newsSlider">	
+	<div class="container">
+		<ul class="slides">
+			<li><img src="image-01.jpg" width="500" height="375" alt="First Image" /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></li>
+			<li><img src="image-02.jpg" width="500" height="375" alt="Second Image" /></li>
+			<li><img src="image-03.jpg" width="500" height="375" alt="Third Image" /></li>
+			<li><img src="image-04.jpg" width="500" height="375" alt="Fourth Image" /></li>
+		</ul>
+	</div>
+	<a href="#" class="previous">previous</a>
+	<a href="#" class="next">next</a>
+	<ul class="pagination">
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+	</ul>	
+</div>
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$('#loopedSlider').loopedSlider({
+			autoStart: 5000
+		});
+		$('#newsSlider').loopedSlider({
+			autoHeight: 400
+		});
+	});
+</script>
+</body>
+</html>
