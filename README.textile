@@ -55,5 +55,6 @@ h2. Initialize
 </pre>
 
 h2. Changelog
+
 0.5.1 - Fixed minor bug, container option not properly set
 0.5 - Initial release
