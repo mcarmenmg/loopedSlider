@@ -56,5 +56,5 @@ h2. Initialize
 
 h2. Changelog
 
-0.5.1 - Fixed minor bug, container option not properly set
-0.5 - Initial release
+* 0.5.1 - Fixed minor bug, container option not properly set
+* 0.5 - Initial release
