@@ -1,5 +1,5 @@
 /*
- * 	loopedSlider 0.5 - jQuery plugin
+ * 	loopedSlider 0.5.1 - jQuery plugin
  *	written by Nathan Searles	
  *	http://code.google.com/p/loopedslider/
  *
@@ -131,7 +131,7 @@
 			if(t===s+1){t=1;}
 			if(t===0){t=s;}	
 			var getHeight = $(o.slides,obj).children(':eq('+(t-1)+')',obj).outerHeight();
-			$('.container',obj).animate({height: getHeight},o.autoHeight);					
+			$(o.container,obj).animate({height: getHeight},o.autoHeight);					
 		};		
 		
 		function animate(dir,clicked){	

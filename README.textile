@@ -1,4 +1,4 @@
-h1. loopedSlider 0.5 - jQuery plugin
+h1. loopedSlider 0.5.1 - jQuery plugin
 
 loopedSlider is a plugin made for jQuery that solves a simple problem, the looping of slide content. It was created to be easy to implement, smooth and most of all end the "content rewind" that most other content sliders suffer from.
 
@@ -55,5 +55,5 @@ h2. Initialize
 </pre>
 
 h2. Changelog
-
-0.5 - Initial release.
+0.5.1 - Fixed minor bug, container option not properly set
+0.5 - Initial release
